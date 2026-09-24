@@ -926,6 +926,7 @@ input, textarea, select { font-family: inherit; }
   margin: 0 auto;
 }
 .job-card {
+  min-width: 0;
   background: var(--color-primary);
   border-radius: var(--border-radius-lg);
   padding: 1.75rem;
@@ -942,11 +943,14 @@ input, textarea, select { font-family: inherit; }
 }
 .job-card-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 0.5rem;
 }
 .job-title {
+  min-width: 0;
+  overflow-wrap: break-word;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-white);
@@ -1196,14 +1200,44 @@ input, textarea, select { font-family: inherit; }
 }
 
 /* Réseau global (accueil) : onglets pays, fiche et galerie */
-.country-tabs {
+.country-carousel {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 2rem;
 }
+.country-tabs {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.25rem 1.5rem;
+  scroll-padding: 0 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent);
+}
+.country-tabs::-webkit-scrollbar { display: none; }
+.country-nav {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.country-nav:hover { border-color: var(--color-accent); color: var(--color-accent); }
 .country-tab {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -1218,43 +1252,6 @@ input, textarea, select { font-family: inherit; }
   transition: var(--transition);
 }
 .country-tab-flag { font-size: 1.15rem; line-height: 1; }
-.country-tabs-wrap { position: relative; }
-.country-tabs-arrow { display: none; }
-@media (max-width: 768px) {
-  /* Carrousel horizontal des pays : glisser ou utiliser les flèches */
-  .country-tabs-wrap { padding: 0 2.5rem; }
-  .country-tabs {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    padding: 0.25rem 0.5rem 0.75rem;
-    margin-bottom: 1.25rem;
-  }
-  .country-tabs::-webkit-scrollbar { display: none; }
-  .country-tab { flex: 0 0 auto; scroll-snap-align: center; }
-  .country-tabs-arrow {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-60%);
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 1.5px solid var(--color-border);
-    background: var(--color-white);
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    line-height: 1;
-    cursor: pointer;
-    box-shadow: var(--shadow-sm);
-    z-index: 1;
-  }
-  .country-tabs-arrow.prev { left: 0; }
-  .country-tabs-arrow.next { right: 0; }
-}
 .country-tab:hover { border-color: var(--color-accent); color: var(--color-accent); }
 .country-tab[aria-selected="true"] {
   background: var(--color-primary);
@@ -1833,7 +1830,8 @@ input, textarea, select { font-family: inherit; }
   .location-cards { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .footer-grid > *:first-child { grid-column: span 2; }
+  .footer-grid > *:first-child,
+  .footer-grid > *:last-child { grid-column: span 2; }
 }
 @media (max-width: 768px) {
   :root { --header-height: 65px; }
@@ -1869,8 +1867,9 @@ input, textarea, select { font-family: inherit; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .location-cards { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .footer-grid > *:first-child { grid-column: span 1; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-grid > *:first-child,
+  .footer-grid > *:last-child { grid-column: auto; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .jobs-filters { flex-direction: column; }
   .filter-select { width: 100%; }
@@ -3055,9 +3054,12 @@ input, textarea, select { font-family: inherit; }
 
 /* Page Contact */
 .contact-intro-text { color: var(--color-gray); line-height: 1.8; margin-bottom: 2rem; }
-.contact-section { padding: 5rem 0; }
-.access-section { padding: 5rem 0; background: var(--color-light); }
-.map-section { padding: 0 0 5rem; }
+.access-section { padding: 5rem 1.5rem; background: var(--color-light); }
+.map-section { padding: 0 1.5rem 5rem; }
+@media (max-width: 768px) {
+  .access-section { padding: 3rem 1.25rem; }
+  .map-section { padding: 0 1.25rem 3rem; }
+}
 .map-container {
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   border-radius: 12px;
