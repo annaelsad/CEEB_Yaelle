@@ -343,6 +343,26 @@ function initMobileNavigation() {
 
 
 /* ============================================================
+   CARTES RETOURNABLES (page Expertises, synergies)
+   Le survol retourne la carte sur ordinateur (CSS) ; les boutons
+   +/− la retournent au toucher et au clavier.
+   ============================================================ */
+
+function initFlipCards() {
+  document.querySelectorAll('.synergy-card').forEach(card => {
+    const toggles = card.querySelectorAll('.synergy-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const flipped = card.classList.toggle('is-flipped');
+        toggles.forEach(t => t.setAttribute('aria-expanded', String(flipped)));
+        card.querySelector(flipped ? '.synergy-back .synergy-toggle' : '.synergy-front .synergy-toggle').focus();
+      });
+    });
+  });
+}
+
+
+/* ============================================================
    INITIALISATION
    ============================================================ */
 
@@ -352,4 +372,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   initCarousel();
   initSlideshows();
   initMobileNavigation();
+  initFlipCards();
 });

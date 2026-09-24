@@ -1133,7 +1133,25 @@ input, textarea, select { font-family: inherit; }
   gap: 2rem;
   margin-bottom: 4rem;
 }
+/* Carte retournable : recto (photo, logo, titre), verso (description, liste).
+   Survol sur ordinateur, bouton +/− au toucher et au clavier. */
 .synergy-card {
+  perspective: 1400px;
+  min-height: 460px;
+}
+.synergy-card-inner {
+  position: relative;
+  display: grid;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.synergy-card.is-flipped .synergy-card-inner { transform: rotateY(180deg); }
+@media (hover: hover) {
+  .synergy-card:hover .synergy-card-inner { transform: rotateY(180deg); }
+}
+.synergy-face {
+  grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
   border-radius: var(--border-radius-lg);
@@ -1141,20 +1159,51 @@ input, textarea, select { font-family: inherit; }
   background-size: cover;
   background-position: center;
   box-shadow: var(--shadow-md);
+  color: var(--color-white);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.synergy-front {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background-image: linear-gradient(rgba(10, 34, 64, 0.55), rgba(10, 34, 64, 0.8)), var(--synergy-photo);
+}
+.synergy-front .synergy-logo,
+.synergy-front .synergy-badge { align-self: center; }
+.synergy-front .synergy-title { font-size: 1.7rem; color: var(--color-white); margin-bottom: 0; }
+.synergy-back {
+  justify-content: center;
+  padding: 2.5rem 2rem;
+  background-image: linear-gradient(rgba(10, 34, 64, 0.93), rgba(10, 34, 64, 0.93)), var(--synergy-photo);
+  transform: rotateY(180deg);
+}
+.synergy-toggle {
+  align-self: center;
+  width: 48px;
+  height: 48px;
+  margin-top: 1.75rem;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
   transition: var(--transition);
 }
-.synergy-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-}
-.synergy-card-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 7rem 2rem 2rem;
-  background: linear-gradient(to top, rgba(10, 34, 64, 0.96) 55%, rgba(10, 34, 64, 0.35) 100%);
-  color: var(--color-white);
+.synergy-toggle:hover { background: var(--color-accent); color: var(--color-white); }
+@media (prefers-reduced-motion: reduce) {
+  .synergy-card-inner { transition: none; transform: none !important; }
+  .synergy-face { transform: none; transition: opacity 0.3s; }
+  .synergy-back { opacity: 0; visibility: hidden; }
+  .synergy-card.is-flipped .synergy-back { opacity: 1; visibility: visible; }
+  .synergy-card.is-flipped .synergy-front { visibility: hidden; }
+  @media (hover: hover) {
+    .synergy-card:hover .synergy-back { opacity: 1; visibility: visible; }
+    .synergy-card:hover .synergy-front { visibility: hidden; }
+  }
 }
 .synergy-logo {
   align-self: flex-start;
@@ -3086,9 +3135,9 @@ input, textarea, select { font-family: inherit; }
 .adp-kicker { color: var(--color-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
 .adp-title { color: var(--color-primary); font-size: 2.5rem; font-weight: 800; margin-top: 0.5rem; }
 .adp-desc { max-width: 800px; margin: 1.5rem auto 0; color: var(--color-gray); font-size: 1.1rem; line-height: 1.6; }
-.synergy-card--ceeb { background-image: url('../images/values/infrastructures.webp'); }
-.synergy-card--sofre { background-image: url('../images/values/excellence.webp'); }
-.synergy-card--crites { background-image: url('../images/values/conseil.webp'); }
+.synergy-card--ceeb { --synergy-photo: url('../images/values/infrastructures.webp'); }
+.synergy-card--sofre { --synergy-photo: url('../images/values/excellence.webp'); }
+.synergy-card--crites { --synergy-photo: url('../images/values/conseil.webp'); }
 .adp-projects-box {
   background: var(--color-white);
   border-radius: var(--border-radius-lg);
