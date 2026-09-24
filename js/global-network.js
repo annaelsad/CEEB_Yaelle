@@ -60,7 +60,9 @@ function showCountry(country) {
   current = country;
 
   tabs.querySelectorAll('.country-tab').forEach(tab => {
-    tab.setAttribute('aria-selected', String(tab.dataset.country === country.code));
+    const selected = tab.dataset.country === country.code;
+    tab.setAttribute('aria-selected', String(selected));
+    if (selected) tab.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
   });
 
   photo.src = photoPath(country, 1);
@@ -103,6 +105,14 @@ function closeGallery() {
 tabs.addEventListener('click', event => {
   const tab = event.target.closest('.country-tab');
   if (tab) showCountry(COUNTRIES.find(c => c.code === tab.dataset.country));
+});
+
+// Flèches de la bande de pays (sur mobile, la bande défile horizontalement)
+document.getElementById('countryTabsPrev').addEventListener('click', () => {
+  tabs.scrollBy({ left: -tabs.clientWidth * 0.7, behavior: 'smooth' });
+});
+document.getElementById('countryTabsNext').addEventListener('click', () => {
+  tabs.scrollBy({ left: tabs.clientWidth * 0.7, behavior: 'smooth' });
 });
 
 galleryBtn.addEventListener('click', openGallery);

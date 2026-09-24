@@ -1218,6 +1218,43 @@ input, textarea, select { font-family: inherit; }
   transition: var(--transition);
 }
 .country-tab-flag { font-size: 1.15rem; line-height: 1; }
+.country-tabs-wrap { position: relative; }
+.country-tabs-arrow { display: none; }
+@media (max-width: 768px) {
+  /* Carrousel horizontal des pays : glisser ou utiliser les flèches */
+  .country-tabs-wrap { padding: 0 2.5rem; }
+  .country-tabs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0.25rem 0.5rem 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .country-tabs::-webkit-scrollbar { display: none; }
+  .country-tab { flex: 0 0 auto; scroll-snap-align: center; }
+  .country-tabs-arrow {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-border);
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    z-index: 1;
+  }
+  .country-tabs-arrow.prev { left: 0; }
+  .country-tabs-arrow.next { right: 0; }
+}
 .country-tab:hover { border-color: var(--color-accent); color: var(--color-accent); }
 .country-tab[aria-selected="true"] {
   background: var(--color-primary);

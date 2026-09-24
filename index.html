@@ -431,7 +431,11 @@
       </div>
 
       <!-- Onglets pays et fiche : générés par js/global-network.js -->
-      <div class="country-tabs" id="countryTabs" role="tablist" aria-label="Pays"></div>
+      <div class="country-tabs-wrap">
+        <button class="country-tabs-arrow prev" id="countryTabsPrev" type="button" aria-label="Pays précédents">&#8249;</button>
+        <div class="country-tabs" id="countryTabs" role="tablist" aria-label="Pays"></div>
+        <button class="country-tabs-arrow next" id="countryTabsNext" type="button" aria-label="Pays suivants">&#8250;</button>
+      </div>
 
       <div class="country-panel">
         <button class="country-photo" id="countryGalleryBtn" type="button">
