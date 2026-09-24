@@ -337,7 +337,7 @@ function initMobileNavigation() {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) closeNav();
+    if (window.innerWidth > 1024) closeNav();
   });
 }
 

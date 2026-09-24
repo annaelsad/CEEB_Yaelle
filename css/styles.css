@@ -1833,8 +1833,8 @@ input, textarea, select { font-family: inherit; }
   .footer-grid > *:first-child,
   .footer-grid > *:last-child { grid-column: span 2; }
 }
-@media (max-width: 768px) {
-  :root { --header-height: 65px; }
+/* Navigation repliée (menu burger) jusqu'aux tablettes en portrait */
+@media (max-width: 1024px) {
   .nav-menu {
     position: fixed;
     top: var(--header-height); left: 0; right: 0;
@@ -1857,6 +1857,9 @@ input, textarea, select { font-family: inherit; }
   .nav-lang { border-left: none; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 0.75rem; margin-top: 0.5rem; flex-wrap: wrap; }
   .nav-hamburger { display: flex; }
   .nav-logo-tagline { display: none; }
+}
+@media (max-width: 768px) {
+  :root { --header-height: 65px; }
   .hero-carousel { height: 62vh; }
   .carousel-caption { left: 4.5rem; right: 4.5rem; }
   .carousel-caption h2 { font-size: 1.5rem; }
@@ -2189,7 +2192,7 @@ input, textarea, select { font-family: inherit; }
 /* ============================================================
    RESPONSIVE SÉLECTEUR GLOBE
    ============================================================ */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-lang {
     border-left: none;
     border-top: 1px solid rgba(255,255,255,0.15);
