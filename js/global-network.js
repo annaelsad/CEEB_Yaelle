@@ -60,7 +60,9 @@ function showCountry(country) {
   current = country;
 
   tabs.querySelectorAll('.country-tab').forEach(tab => {
-    tab.setAttribute('aria-selected', String(tab.dataset.country === country.code));
+    const selected = tab.dataset.country === country.code;
+    tab.setAttribute('aria-selected', String(selected));
+    if (selected) centerTab(tab);
   });
 
   photo.src = photoPath(country, 1);
@@ -70,6 +72,20 @@ function showCountry(country) {
   projectsEl.innerHTML = Array.from({ length: PROJECTS_PER_COUNTRY }, (_, i) =>
     `<li>${countryText(country, `item${i + 1}`)}</li>`
   ).join('');
+}
+
+
+// Fait défiler le carrousel des pays pour centrer l'onglet actif
+function centerTab(tab) {
+  tabs.scrollTo({
+    left: tab.offsetLeft - (tabs.clientWidth - tab.offsetWidth) / 2,
+    behavior: 'smooth'
+  });
+}
+
+function showSiblingCountry(step) {
+  const index = COUNTRIES.indexOf(current);
+  showCountry(COUNTRIES[(index + step + COUNTRIES.length) % COUNTRIES.length]);
 }
 
 
@@ -104,6 +120,9 @@ tabs.addEventListener('click', event => {
   const tab = event.target.closest('.country-tab');
   if (tab) showCountry(COUNTRIES.find(c => c.code === tab.dataset.country));
 });
+
+document.getElementById('countryPrev').addEventListener('click', () => showSiblingCountry(-1));
+document.getElementById('countryNext').addEventListener('click', () => showSiblingCountry(1));
 
 galleryBtn.addEventListener('click', openGallery);
 document.getElementById('galleryClose').addEventListener('click', closeGallery);
