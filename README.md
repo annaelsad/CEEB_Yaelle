@@ -16,6 +16,10 @@ Langue affichée au chargement, par ordre de priorité :
    France → `fr`, Pologne → `pl`, Turquie → `tr` ;
 4. anglais partout ailleurs.
 
+Les pages Carrières et Contact n'existent qu'en français et en anglais
+(`data-languages="fr,en"` sur leur balise `<body>`) : en polonais ou en
+turc, elles s'affichent en anglais ; la langue choisie reste celle du site.
+
 Pour ajouter une langue : déclarer son code dans `CEEB_CONFIG.languages`
 (`js/app.js`), créer `lang/<code>.js` et `images/carousel/<code>/`,
 puis ajouter les balises `hreflang` dans les cinq pages et `sitemap.xml`.
