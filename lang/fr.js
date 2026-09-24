@@ -96,7 +96,8 @@ CEEB_DATA.translations.fr = {
     "card6": {
       "title": "Projets Internationaux",
       "desc": "Ingénierie export en Europe, Afrique et Moyen-Orient. Expertise reconnue sur les marchés internationaux."
-    }
+    },
+    "subtitle2": "Nous concevons des solutions innovantes, durables et sur mesure, pensées pour répondre aux enjeux économiques, environnementaux et territoriaux d'aujourd'hui et de demain."
   },
   "stats": {
     "years": "Années d'expertise",

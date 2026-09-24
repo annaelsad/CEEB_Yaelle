@@ -96,7 +96,8 @@ CEEB_DATA.translations.tr = {
     "card6": {
       "title": "Uluslararası Projeler",
       "desc": "Avrupa, Afrika ve Orta Doğu'da ihracat mühendisliği. Uluslararası pazarlarda tanınan uzmanlık."
-    }
+    },
+    "subtitle2": "Bugünün ve yarının ekonomik, çevresel ve bölgesel zorluklarına yanıt veren yenilikçi, sürdürülebilir ve özel çözümler tasarlıyoruz."
   },
   "stats": {
     "years": "Yıllık deneyim",

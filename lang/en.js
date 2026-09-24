@@ -96,7 +96,8 @@ CEEB_DATA.translations.en = {
     "card6": {
       "title": "International Projects",
       "desc": "Export engineering in Europe, Africa and the Middle East. Recognised expertise in international markets."
-    }
+    },
+    "subtitle2": "We design innovative, sustainable and tailor-made solutions to meet today's and tomorrow's economic, environmental and regional challenges."
   },
   "stats": {
     "years": "Years of expertise",

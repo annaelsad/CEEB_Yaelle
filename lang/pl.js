@@ -96,7 +96,8 @@ CEEB_DATA.translations.pl = {
     "card6": {
       "title": "Projekty Międzynarodowe",
       "desc": "Inżynieria eksportowa w Europie, Afryce i na Bliskim Wschodzie. Uznana ekspertyza na rynkach międzynarodowych."
-    }
+    },
+    "subtitle2": "Projektujemy innowacyjne, zrównoważone i szyte na miarę rozwiązania, odpowiadające na dzisiejsze i przyszłe wyzwania gospodarcze, środowiskowe i regionalne."
   },
   "stats": {
     "years": "Lat doświadczenia",
