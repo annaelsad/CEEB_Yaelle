@@ -3053,9 +3053,12 @@ input, textarea, select { font-family: inherit; }
 
 /* Page Contact */
 .contact-intro-text { color: var(--color-gray); line-height: 1.8; margin-bottom: 2rem; }
-.contact-section { padding: 5rem 0; }
-.access-section { padding: 5rem 0; background: var(--color-light); }
-.map-section { padding: 0 0 5rem; }
+.access-section { padding: 5rem 1.5rem; background: var(--color-light); }
+.map-section { padding: 0 1.5rem 5rem; }
+@media (max-width: 768px) {
+  .access-section { padding: 3rem 1.25rem; }
+  .map-section { padding: 0 1.25rem 3rem; }
+}
 .map-container {
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   border-radius: 12px;
