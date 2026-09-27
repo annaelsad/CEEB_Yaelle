@@ -7,13 +7,19 @@
    ============================================================ */
 
 // Filtre de zone, d'après le pays du lieu de travail de chaque offre
-// (champ « country ») : toutes les offres en anglais, les postes en France
-// en français, les postes à l'international en anglais.
+// (champ « country »).
 const SCOPES = {
-  all: { dataLang: "en", matches: () => true },
-  france: { dataLang: "fr", matches: job => job.country === "FR" },
-  abroad: { dataLang: "en", matches: job => job.country !== "FR" }
+  all: job => true,
+  france: job => job.country === "FR",
+  abroad: job => job.country !== "FR"
 };
+
+// Langue des offres : français sur le site en français, anglais dans
+// toutes les autres langues.
+function getOfferLang(siteLang) {
+  return siteLang === "fr" ? "fr" : "en";
+}
+let offerLang = "fr";
 const DEFAULT_SCOPE = "all";
 let currentScope = DEFAULT_SCOPE;
 
@@ -51,7 +57,6 @@ function t(key) {
 
 async function showOffers(scope) {
   currentScope = scope;
-  const offerLang = SCOPES[scope].dataLang;
 
   if (!CEEB_DATA.jobs[offerLang]) {
     try {
@@ -102,7 +107,7 @@ function matchesFilters(job) {
   const level = levelSelect.value;
   const query = searchInput.value.trim().toLowerCase();
 
-  if (!SCOPES[currentScope].matches(job)) return false;
+  if (!SCOPES[currentScope](job)) return false;
   if (category && job.categoryId !== category) return false;
   if (sector && !(job.sectorIds || []).includes(sector)) return false;
   if (level && job.experienceLevelId !== level) return false;
@@ -242,9 +247,9 @@ document.addEventListener("keydown", event => {
   if (event.key === "Escape") closeModal();
 });
 
-// La langue du site change les libellés de l'interface ; les offres
-// restent celles de la zone choisie.
+// La langue du site change les libellés de l'interface et la langue des offres.
 document.addEventListener("ceeb:langChanged", event => {
+  offerLang = getOfferLang(event.detail.contentLang);
   const translations = CEEB_DATA.translations[event.detail.contentLang];
   ui = getNestedValue(translations, "recruitmentPage.jobs") || {};
   applyUiTranslations();
