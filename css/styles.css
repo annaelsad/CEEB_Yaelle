@@ -2798,6 +2798,13 @@ input, textarea, select { font-family: inherit; }
   .about-founder-text {
     padding-left: 0;
   }
+  .about-founder-text > .section-badge {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-founder-text > .section-title { text-align: center; }
   .founder-info-card {
     right: 10px;
     bottom: -10px;
