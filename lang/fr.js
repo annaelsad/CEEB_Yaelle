@@ -239,7 +239,7 @@ CEEB_DATA.translations.fr = {
     },
     "who": {
       "p1": "CEEB : L'Ingénierie au Service des Infrastructures",
-      "cta": "Nous Contacter.",
+      "cta": "Nous Contacter",
       "p2": "Fondée le 1er mars 1989 par Gérard SEBAG, CEEB — Concept Européen Équipement Bâtiment est un bureau d'études d'ingénierie Second Œuvre spécialisé dans les projets ferroviaires et aéroportuaires.",
       "founderName": "Gérard SEBAG",
       "founderTitle": "Fondateur & Président",

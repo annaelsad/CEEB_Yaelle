@@ -239,7 +239,7 @@ CEEB_DATA.translations.pl = {
     },
     "who": {
       "p1": "CEEB: Inżynieria w służbie infrastruktury",
-      "cta": "Contact Us.",
+      "cta": "Skontaktuj się z nami",
       "p2": "Założona 1 marca 1989 roku przez Gérarda SEBAGA firma CEEB — European Concept Building Equipment — to biuro inżynieryjne specjalizujące się w robotach wykończeniowych dla kolei i lotnisk.",
       "founderName": "Gérard SEBAG",
       "founderTitle": "Założyciel i Prezes",

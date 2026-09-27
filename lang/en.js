@@ -239,7 +239,7 @@ CEEB_DATA.translations.en = {
     },
     "who": {
       "p1": "CEEB: Engineering at the Service of Infrastructure",
-      "cta": "Contact Us.",
+      "cta": "Contact Us",
       "p2": "Founded on 1 March 1989 by Gérard SEBAG, CEEB — European Concept Building Equipment is an engineering consultancy specialising in railway and airport secondary works.",
       "founderName": "Gerard SEBAG",
       "founderTitle": "Founder & President",

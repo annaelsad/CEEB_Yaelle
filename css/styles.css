@@ -2805,6 +2805,12 @@ input, textarea, select { font-family: inherit; }
     margin-right: auto;
   }
   .about-founder-text > .section-title { text-align: center; }
+  .about-founder-text > .btn {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .founder-info-card {
     right: 10px;
     bottom: -10px;

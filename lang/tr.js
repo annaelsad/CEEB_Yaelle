@@ -239,7 +239,7 @@ CEEB_DATA.translations.tr = {
     },
     "who": {
       "p1": "CEEB: Altyapının Hizmetinde Mühendislik",
-      "cta": "Contact Us.",
+      "cta": "Bize Ulaşın",
       "p2": "1 Mart 1989'da Gérard SEBAG tarafından kurulan CEEB — European Concept Building Equipment, demiryolu ve havalimanı ikincil yapı işlerinde uzmanlaşmış bir mühendislik bürosudur.",
       "founderName": "Gérard SEBAG",
       "founderTitle": "Kurucu ve Başkan",
