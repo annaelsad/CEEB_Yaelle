@@ -588,6 +588,7 @@ CEEB_DATA.translations.fr = {
       }
     },
     "hotels": {
+      "viewHotel": "Voir l'hôtel",
       "badge": "Hébergement",
       "title": "Hôtels à Proximité",
       "subtitle": "Pour faciliter le séjour de nos partenaires et collaborateurs, voici des hôtels de qualité situés à quelques minutes de nos bureaux.",

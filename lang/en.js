@@ -588,6 +588,7 @@ CEEB_DATA.translations.en = {
       }
     },
     "hotels": {
+      "viewHotel": "View hotel",
       "badge": "Accommodation",
       "title": "Nearby Hotels",
       "subtitle": "To make stays easier for our partners and collaborators, here are quality hotels located just minutes from our offices.",

@@ -3127,6 +3127,19 @@ input, textarea, select { font-family: inherit; }
 .hotel-card-title { font-size: 18px; margin-bottom: 0.5rem; color: var(--color-primary); }
 .hotel-card-desc { font-size: 14px; opacity: 0.9; margin-bottom: 1rem; }
 .hotel-card-distance { font-size: 13px; font-weight: bold; color: var(--color-accent); }
+.hotel-card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55rem 1.2rem;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 50px;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+.hotel-card-link::after { content: ' \2197'; }
+.hotel-card-link:hover { background: var(--color-primary); color: var(--color-white); }
 
 /* Page Expertises : partenariat ADP */
 .section-subtitle--spaced { margin: 1rem auto 2rem; }

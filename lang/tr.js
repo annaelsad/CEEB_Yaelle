@@ -588,6 +588,7 @@ CEEB_DATA.translations.tr = {
       }
     },
     "hotels": {
+      "viewHotel": "Oteli görüntüle",
       "badge": "Accommodation",
       "title": "Yakındaki Oteller",
       "subtitle": "Ortaklarımızın ve çalışanlarımızın konaklamasını kolaylaştırmak için ofislerimize birkaç dakika mesafedeki kaliteli oteller.",

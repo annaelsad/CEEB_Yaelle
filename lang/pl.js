@@ -588,6 +588,7 @@ CEEB_DATA.translations.pl = {
       }
     },
     "hotels": {
+      "viewHotel": "Zobacz hotel",
       "badge": "Accommodation",
       "title": "Hotele w pobliżu",
       "subtitle": "Aby ułatwić pobyt naszym partnerom i współpracownikom, oto hotele dobrej klasy położone kilka minut od naszych biur.",
