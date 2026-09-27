@@ -105,10 +105,14 @@ function detectDefaultLang() {
    TRADUCTIONS
    ============================================================ */
 
+// Version des fichiers (paramètre ?v= du lien vers app.js), reprise pour les
+// fichiers de données chargés à la demande afin d'éviter une copie périmée.
+const ASSET_VERSION = new URL(document.currentScript.src).searchParams.get('v');
+
 function loadDataScript(url) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = url;
+    script.src = ASSET_VERSION ? `${url}?v=${ASSET_VERSION}` : url;
     script.onload = () => {
       script.remove();
       resolve();

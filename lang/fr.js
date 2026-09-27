@@ -56,7 +56,7 @@ CEEB_DATA.translations.fr = {
     "slide11": {
       "title": "Systèmes Intelligents & GTB",
       "description": "Connectivité, sécurité et gestion technique des bâtiments intelligents.",
-      "badge": "Smart Building"
+      "badge": "Bâtiment Intelligent"
     },
     "slide12": {
       "title": "Ingénierie Tertiaire",
@@ -225,14 +225,14 @@ CEEB_DATA.translations.fr = {
     },
     "direction": {
       "badge": "Direction Actuelle",
-      "title": "The New Generation",
+      "title": "La Nouvelle Génération",
       "subtitle": "En 2023, Stéphane et Fabrice, fils de Gérard SEBAG, prennent officiellement la direction de C.E.E.B. et poursuivent la mission fondatrice de l'entreprise.",
       "stephane": {
         "role": "Directeur Stratégique",
         "desc": "Il pilote le développement de C.E.E.B. en France et à l'international, avec un accent sur l'innovation BIM et les grands projets d'infrastructure."
       },
       "team": {
-        "title": "Our Team",
+        "title": "Notre Équipe",
         "role": "MOA / MOE — Ingénierie Second Œuvre",
         "desc": "Plus de 40 experts en électricité, CVC, plomberie, GTB, sécurité incendie et VDI, dédiés à la réussite de vos projets ferroviaires et aéroportuaires."
       }
@@ -451,7 +451,7 @@ CEEB_DATA.translations.fr = {
       "workRealProjects": "Travailler sur des projets réels",
       "collaborateTeams": "Collaborer avec les équipes",
       "deliverQuality": "Fournir un travail de qualité",
-      "permanentContract": "Contrat permanent",
+      "permanentContract": "CDI",
       "careerGrowth": "Évolution de carrière",
       "competitiveSalary": "Salaire compétitif",
       "reference": "Référence :",
@@ -534,8 +534,8 @@ CEEB_DATA.translations.fr = {
       "errorMsg": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par email."
     },
     "access": {
-      "badge": "Val de Fontenay Hub",
-      "title": "How to Reach Us",
+      "badge": "Pôle Val de Fontenay",
+      "title": "Comment Nous Rejoindre",
       "subtitle": "Notre implantation stratégique au cœur du pôle de Val de Fontenay vous offre une accessibilité exceptionnelle par tous les modes de transport.",
       "cards": {
         "rer": {
@@ -545,7 +545,7 @@ CEEB_DATA.translations.fr = {
           "line3": "Accès direct depuis Paris, La Défense, Marne-la-Vallée"
         },
         "metro": {
-          "title": "Metro",
+          "title": "Métro",
           "line1": "<strong>Ligne 1</strong> - Château de Vincennes (puis RER A)",
           "line2": "<strong>Ligne 4</strong> - Gare de l'Est (correspondance RER E)",
           "line3": "<strong>Ligne 7</strong> - La Courneuve (puis RER A)"
@@ -562,7 +562,7 @@ CEEB_DATA.translations.fr = {
           "line3": "Réseau dense sur toute l'Île-de-France"
         },
         "car": {
-          "title": "Car",
+          "title": "Voiture",
           "line1": "<strong>A86</strong> - Sortie Val de Fontenay (5 min)",
           "line2": "<strong>A4</strong> - Sortie Nogent-sur-Marne / Fontenay-sous-Bois",
           "line3": "Parkings publics disponibles à proximité"
@@ -588,7 +588,7 @@ CEEB_DATA.translations.fr = {
       }
     },
     "hotels": {
-      "badge": "Accommodation",
+      "badge": "Hébergement",
       "title": "Hôtels à Proximité",
       "subtitle": "Pour faciliter le séjour de nos partenaires et collaborateurs, voici des hôtels de qualité situés à quelques minutes de nos bureaux.",
       "card1": {
