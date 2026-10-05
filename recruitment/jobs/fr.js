@@ -43,7 +43,7 @@ CEEB_DATA.jobs.fr = {
   ],
   "jobs": [
     {
-      "jobHeading": "Ingénieur en télécommunications ferroviaires",
+      "jobHeading": "Ingénieur Télécom - Ferroviaire",
       "reference": "ITF-101",
       "jobType": "CDI",
       "location": "Paris, France",
@@ -53,7 +53,7 @@ CEEB_DATA.jobs.fr = {
         "railway"
       ],
       "experienceLevelId": "senior",
-      "description": "Concevoir et optimiser les systèmes de communication ferroviaires.",
+      "description": "Nous recherchons un ingénieur télécom expérimenté pour concevoir et optimiser les systèmes de communication ferroviaire.",
       "skills": [
         "Télécommunications",
         "Ferroviaire",
@@ -71,7 +71,7 @@ CEEB_DATA.jobs.fr = {
         "airport"
       ],
       "experienceLevelId": "confirmed",
-      "description": "Concevoir et dimensionner des structures aéroportuaires.",
+      "description": "Ingénieur structure pour concevoir et dimensionner les structures des bâtiments aéroportuaires.",
       "skills": [
         "Ingénierie",
         "Aérien",
@@ -79,7 +79,7 @@ CEEB_DATA.jobs.fr = {
       ]
     },
     {
-      "jobHeading": "Conducteur de Travaux Ferroviaires",
+      "jobHeading": "Conducteur de Travaux - Ferroviaire",
       "reference": "CTF-103",
       "jobType": "CDI",
       "location": "Paris, France",
@@ -89,7 +89,7 @@ CEEB_DATA.jobs.fr = {
         "railway"
       ],
       "experienceLevelId": "senior",
-      "description": "Gérer des projets de construction ferroviaire.",
+      "description": "Pilotage de chantiers ferroviaires complexes avec gestion d'équipes et respect des délais.",
       "skills": [
         "Management",
         "Ferroviaire",
@@ -97,134 +97,130 @@ CEEB_DATA.jobs.fr = {
       ]
     },
     {
-      "jobHeading": "Ingénieur Électrique Senior",
-      "reference": "IES-104",
+      "jobHeading": "Dessinateur Revit - Aérien",
+      "reference": "DRA-104",
       "jobType": "CDI",
-      "location": "Fontenay-sous-Bois (94)",
+      "location": "Paris, France",
+      "country": "FR",
+      "categoryId": "design",
+      "sectorIds": [
+        "airport"
+      ],
+      "experienceLevelId": "confirmed",
+      "description": "Modélisation BIM des projets aéroportuaires avec Revit et coordination des disciplines.",
+      "skills": [
+        "Design & CAO",
+        "Aérien",
+        "Confirmé"
+      ]
+    },
+    {
+      "jobHeading": "Dessinateur AutoCAD - Ferroviaire",
+      "reference": "DAF-105",
+      "jobType": "CDI",
+      "location": "Paris, France",
+      "country": "FR",
+      "categoryId": "design",
+      "sectorIds": [
+        "railway"
+      ],
+      "experienceLevelId": "junior",
+      "description": "Réalisation de plans techniques ferroviaires avec AutoCAD et coordination des études.",
+      "skills": [
+        "Design & CAO",
+        "Ferroviaire",
+        "Junior"
+      ]
+    },
+    {
+      "jobHeading": "Ingénieur Exploitation Ferroviaire",
+      "reference": "IEF-106",
+      "jobType": "CDI",
+      "location": "Paris, France",
       "country": "FR",
       "categoryId": "engineering",
-      "sectorIds": [],
+      "sectorIds": [
+        "railway"
+      ],
       "experienceLevelId": "senior",
-      "description": "Nous recherchons un Ingénieur Électrique Senior pour rejoindre notre équipe. Vous serez responsable de la conception et du pilotage de projets d'ingénierie électrique complexes.",
+      "description": "Optimisation de l'exploitation et de la maintenance des systèmes ferroviaires.",
       "skills": [
-        "Électricité",
         "Ingénierie",
+        "Ferroviaire",
         "Senior"
       ]
     },
     {
-      "jobHeading": "Ingénieur Télécommunications",
-      "reference": "ITC-105",
+      "jobHeading": "Chef de Projet Aéroportuaire",
+      "reference": "CPA-107",
       "jobType": "CDI",
-      "location": "Fontenay-sous-Bois (94)",
-      "country": "FR",
-      "categoryId": "telecom",
-      "sectorIds": [],
-      "experienceLevelId": null,
-      "description": "Nous cherchons un Ingénieur Télécommunications pour concevoir et déployer des systèmes de communication avancés pour les infrastructures critiques.",
-      "skills": [
-        "Télécommunications",
-        "Infrastructures critiques"
-      ]
-    },
-    {
-      "jobHeading": "Ingénieur BIM / Modélisation 3D",
-      "reference": "BIM-106",
-      "jobType": "CDI",
-      "location": "Fontenay-sous-Bois (94)",
-      "country": "FR",
-      "categoryId": "design",
-      "sectorIds": [],
-      "experienceLevelId": null,
-      "description": "Rejoignez notre équipe BIM pour créer des maquettes numériques avancées et des visualisations 3D/4D pour nos projets d'infrastructure.",
-      "skills": [
-        "BIM",
-        "Maquette numérique",
-        "3D/4D"
-      ]
-    },
-    {
-      "jobHeading": "Chef de Projet Ingénierie",
-      "reference": "CPI-107",
-      "jobType": "CDI",
-      "location": "Fontenay-sous-Bois (94)",
+      "location": "Paris, France",
       "country": "FR",
       "categoryId": "management",
-      "sectorIds": [],
+      "sectorIds": [
+        "airport"
+      ],
       "experienceLevelId": "senior",
-      "description": "Nous recherchons un Chef de Projet expérimenté pour piloter des projets d'ingénierie complexes de A à Z, en assurant la qualité, les délais et les budgets.",
+      "description": "Pilotage global de projets aéroportuaires complexes et multidisciplinaires.",
       "skills": [
-        "Gestion de projet",
-        "Qualité",
-        "Délais",
-        "Budgets"
+        "Management",
+        "Aérien",
+        "Senior"
       ]
     },
     {
-      "jobHeading": "Dessinateur / Projeteur AutoCAD en Ingénierie courants faibles et systèmes de télécommunications (H/F)",
-      "reference": "STMO-511",
+      "jobHeading": "Ingénieur Sécurité Ferroviaire",
+      "reference": "ISF-108",
       "jobType": "CDI",
-      "location": "Fontenay-sous-Bois – Paris Orly/CDG",
+      "location": "Paris, France",
       "country": "FR",
-      "categoryId": "design",
+      "categoryId": "engineering",
       "sectorIds": [
-        "railway",
-        "airport"
+        "railway"
       ],
       "experienceLevelId": "confirmed",
-      "description": "Nous recherchons un(e) Dessinateur(trice) AutoCAD en courants faibles et systèmes de télécommunications expérimenté(e) pour rejoindre nos équipes et contribuer à des projets innovants d'envergure dans les secteurs du transport.",
+      "description": "Assurance de la sécurité des systèmes et des installations ferroviaires.",
       "skills": [
-        "AutoCAD",
-        "Courants faibles",
-        "Télécommunications",
-        "Revit"
-      ],
-      "missions": [
-        "Élaboration de plans d'exécution : création de plans détaillés pour les installations électriques et de télécommunications",
-        "Production de schémas et synoptiques",
-        "Modélisation 2D : réalisation de la modélisation d'installations techniques, d'équipements et de leur intégration dans l'environnement existant",
-        "Mise à jour de la documentation graphique",
-        "Collaboration technique avec le chef de projet pour garantir la conformité des plans avec le cahier des charges et les normes en vigueur"
-      ],
-      "profile": [
-        "Formation Bac+2/Bac+3 (type BTS, DUT ou Licence Professionnelle) en génie électrique, électrotechnique, conception industrielle ou équivalent",
-        "Aisance impérative du logiciel AutoCAD",
-        "Expérience confirmée de 2 à 5 ans dans un poste similaire, idéalement au sein d'un bureau d'études spécialisé en ingénierie électrique, télécoms ou infrastructures",
-        "La connaissance d'autres logiciels de CAO/DAO 2D, 3D (tels que Revit) serait un plus"
+        "Ingénierie",
+        "Ferroviaire",
+        "Confirmé"
       ]
     },
     {
-      "jobHeading": "Conducteur de travaux en courants faibles et systèmes de télécommunications (H/F)",
-      "reference": "CTX-1021",
+      "jobHeading": "Technicien BIM - Coordination",
+      "reference": "TBC-109",
       "jobType": "CDI",
-      "location": "Fontenay-sous-Bois – Paris Orly/CDG",
+      "location": "Paris, France",
       "country": "FR",
-      "categoryId": "management",
+      "categoryId": "design",
       "sectorIds": [
         "railway",
         "airport"
       ],
-      "experienceLevelId": "senior",
-      "description": "Nous recherchons un(e) Conducteur(trice) de Travaux en courants faibles et systèmes de télécommunications expérimenté(e) pour rejoindre nos équipes et contribuer à des projets innovants d'envergure dans les secteurs du transport ferroviaire ou/et aéroportuaire.",
+      "experienceLevelId": "junior",
+      "description": "Coordination BIM et gestion des maquettes numériques pour projets ferroviaires et aériens.",
       "skills": [
-        "Conduite de travaux",
-        "Courants faibles",
-        "Ferroviaire",
-        "Aéroportuaire"
+        "Design & CAO",
+        "Ferroviaire & Aérien",
+        "Junior"
+      ]
+    },
+    {
+      "jobHeading": "Ingénieur Systèmes Aéroportuaires",
+      "reference": "ISY-110",
+      "jobType": "CDI",
+      "location": "Paris, France",
+      "country": "FR",
+      "categoryId": "engineering",
+      "sectorIds": [
+        "airport"
       ],
-      "missions": [
-        "Assurer le suivi technique, administratif et financier des chantiers",
-        "Coordonner une équipe et les différents intervenants (sous-traitants, fournisseurs)",
-        "Garantir le respect des délais, des budgets et des normes de qualité et de sécurité",
-        "Participer aux réunions de chantier et rédiger les comptes-rendus",
-        "Assurer la relation client et la bonne communication avec les parties prenantes"
-      ],
-      "profile": [
-        "Formation supérieure (BTS, DUT, Licence Pro, Ingénieur) en génie civil, électrotechnique ou équivalent",
-        "Expérience significative en conduite de travaux sur des projets d'infrastructures de transport, idéalement ferroviaires ou aéroportuaires",
-        "Utilisation des outils de planification et de gestion de projet",
-        "Connaissance des outils CAO / DAO / 2D, 3D (AutoCAD, Revit, …)",
-        "Rigueur, autonomie, sens des responsabilités et capacités relationnelles"
+      "experienceLevelId": "senior",
+      "description": "Conception et intégration des systèmes complexes pour les infrastructures aéroportuaires.",
+      "skills": [
+        "Ingénierie",
+        "Aérien",
+        "Senior"
       ]
     }
   ]

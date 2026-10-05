@@ -43,7 +43,7 @@ CEEB_DATA.jobs.en = {
   ],
   "jobs": [
     {
-      "jobHeading": "Railway Telecommunications Engineer",
+      "jobHeading": "Telecom Engineer - Railway",
       "reference": "ITF-101",
       "jobType": "Permanent contract",
       "location": "Paris, France",
@@ -53,7 +53,7 @@ CEEB_DATA.jobs.en = {
         "railway"
       ],
       "experienceLevelId": "senior",
-      "description": "Design and optimize railway communication systems.",
+      "description": "We are looking for an experienced telecom engineer to design and optimise railway communication systems.",
       "skills": [
         "Telecommunications",
         "Railway",
@@ -61,7 +61,7 @@ CEEB_DATA.jobs.en = {
       ]
     },
     {
-      "jobHeading": "Structural Engineer - Aerial",
+      "jobHeading": "Structural Engineer - Airport",
       "reference": "ISA-102",
       "jobType": "Permanent contract",
       "location": "Paris, France",
@@ -71,15 +71,15 @@ CEEB_DATA.jobs.en = {
         "airport"
       ],
       "experienceLevelId": "confirmed",
-      "description": "Design and dimension airport structures.",
+      "description": "Structural engineer to design and size the structures of airport buildings.",
       "skills": [
         "Engineering",
-        "Air",
-        "Confirmed"
+        "Airport",
+        "Experienced"
       ]
     },
     {
-      "jobHeading": "Railway Works Supervisor",
+      "jobHeading": "Site Manager - Railway",
       "reference": "CTF-103",
       "jobType": "Permanent contract",
       "location": "Paris, France",
@@ -89,7 +89,7 @@ CEEB_DATA.jobs.en = {
         "railway"
       ],
       "experienceLevelId": "senior",
-      "description": "Manage railway construction projects.",
+      "description": "Management of complex railway worksites, leading teams and meeting deadlines.",
       "skills": [
         "Management",
         "Railway",
@@ -97,134 +97,130 @@ CEEB_DATA.jobs.en = {
       ]
     },
     {
-      "jobHeading": "Senior Electrical Engineer",
-      "reference": "IES-104",
+      "jobHeading": "Revit Draughtsperson - Airport",
+      "reference": "DRA-104",
       "jobType": "Permanent contract",
-      "location": "Fontenay-sous-Bois (94)",
+      "location": "Paris, France",
+      "country": "FR",
+      "categoryId": "design",
+      "sectorIds": [
+        "airport"
+      ],
+      "experienceLevelId": "confirmed",
+      "description": "BIM modelling of airport projects with Revit and coordination of disciplines.",
+      "skills": [
+        "Design & CAD",
+        "Airport",
+        "Experienced"
+      ]
+    },
+    {
+      "jobHeading": "AutoCAD Draughtsperson - Railway",
+      "reference": "DAF-105",
+      "jobType": "Permanent contract",
+      "location": "Paris, France",
+      "country": "FR",
+      "categoryId": "design",
+      "sectorIds": [
+        "railway"
+      ],
+      "experienceLevelId": "junior",
+      "description": "Production of railway technical drawings with AutoCAD and coordination of studies.",
+      "skills": [
+        "Design & CAD",
+        "Railway",
+        "Junior"
+      ]
+    },
+    {
+      "jobHeading": "Railway Operations Engineer",
+      "reference": "IEF-106",
+      "jobType": "Permanent contract",
+      "location": "Paris, France",
       "country": "FR",
       "categoryId": "engineering",
-      "sectorIds": [],
+      "sectorIds": [
+        "railway"
+      ],
       "experienceLevelId": "senior",
-      "description": "We are looking for a Senior Electrical Engineer to join our team. You will be responsible for the design and management of complex electrical engineering projects.",
+      "description": "Optimisation of the operation and maintenance of railway systems.",
       "skills": [
-        "Electrical",
         "Engineering",
+        "Railway",
         "Senior"
       ]
     },
     {
-      "jobHeading": "Telecommunications Engineer",
-      "reference": "ITC-105",
+      "jobHeading": "Airport Project Manager",
+      "reference": "CPA-107",
       "jobType": "Permanent contract",
-      "location": "Fontenay-sous-Bois (94)",
-      "country": "FR",
-      "categoryId": "telecom",
-      "sectorIds": [],
-      "experienceLevelId": null,
-      "description": "We are looking for a Telecommunications Engineer to design and deploy advanced communication systems for critical infrastructure.",
-      "skills": [
-        "Telecommunications",
-        "Critical infrastructure"
-      ]
-    },
-    {
-      "jobHeading": "BIM / 3D Modelling Engineer",
-      "reference": "BIM-106",
-      "jobType": "Permanent contract",
-      "location": "Fontenay-sous-Bois (94)",
-      "country": "FR",
-      "categoryId": "design",
-      "sectorIds": [],
-      "experienceLevelId": null,
-      "description": "Join our BIM team to create advanced digital models and 3D/4D visualisations for our infrastructure projects.",
-      "skills": [
-        "BIM",
-        "Digital model",
-        "3D/4D"
-      ]
-    },
-    {
-      "jobHeading": "Engineering Project Manager",
-      "reference": "CPI-107",
-      "jobType": "Permanent contract",
-      "location": "Fontenay-sous-Bois (94)",
+      "location": "Paris, France",
       "country": "FR",
       "categoryId": "management",
-      "sectorIds": [],
+      "sectorIds": [
+        "airport"
+      ],
       "experienceLevelId": "senior",
-      "description": "We are looking for an experienced Project Manager to lead complex engineering projects from start to finish, ensuring quality, deadlines and budgets.",
+      "description": "Overall management of complex, multidisciplinary airport projects.",
       "skills": [
-        "Project management",
-        "Quality",
-        "Deadlines",
-        "Budgets"
+        "Management",
+        "Airport",
+        "Senior"
       ]
     },
     {
-      "jobHeading": "AutoCAD Draughtsperson / Designer in Low-Voltage and Telecommunications Systems Engineering (M/F)",
-      "reference": "STMO-511",
+      "jobHeading": "Railway Safety Engineer",
+      "reference": "ISF-108",
       "jobType": "Permanent contract",
-      "location": "Fontenay-sous-Bois – Paris Orly/CDG",
+      "location": "Paris, France",
       "country": "FR",
-      "categoryId": "design",
+      "categoryId": "engineering",
       "sectorIds": [
-        "railway",
-        "airport"
+        "railway"
       ],
       "experienceLevelId": "confirmed",
-      "description": "We are looking for an experienced AutoCAD draughtsperson in low-voltage and telecommunications systems to join our teams and contribute to innovative, large-scale projects in the transport sector.",
+      "description": "Ensuring the safety of railway systems and installations.",
       "skills": [
-        "AutoCAD",
-        "Low voltage",
-        "Telecommunications",
-        "Revit"
-      ],
-      "missions": [
-        "Preparation of execution drawings: creation of detailed drawings for electrical and telecommunications installations",
-        "Production of diagrams and block diagrams",
-        "2D modelling: modelling of technical installations and equipment and their integration into the existing environment",
-        "Updating of graphic documentation",
-        "Technical collaboration with the project manager to ensure drawings comply with the specifications and current standards"
-      ],
-      "profile": [
-        "Two- or three-year higher education degree (BTS, DUT or professional bachelor's) in electrical engineering, electrotechnics, industrial design or equivalent",
-        "Full proficiency in AutoCAD is essential",
-        "Proven experience of 2 to 5 years in a similar position, ideally within an engineering consultancy specialising in electrical, telecoms or infrastructure engineering",
-        "Knowledge of other 2D/3D CAD software (such as Revit) would be a plus"
+        "Engineering",
+        "Railway",
+        "Experienced"
       ]
     },
     {
-      "jobHeading": "Site Manager in Low-Voltage and Telecommunications Systems (M/F)",
-      "reference": "CTX-1021",
+      "jobHeading": "BIM Technician - Coordination",
+      "reference": "TBC-109",
       "jobType": "Permanent contract",
-      "location": "Fontenay-sous-Bois – Paris Orly/CDG",
+      "location": "Paris, France",
       "country": "FR",
-      "categoryId": "management",
+      "categoryId": "design",
       "sectorIds": [
         "railway",
         "airport"
       ],
-      "experienceLevelId": "senior",
-      "description": "We are looking for an experienced Site Manager in low-voltage and telecommunications systems to join our teams and contribute to innovative, large-scale projects in the railway and/or airport transport sectors.",
+      "experienceLevelId": "junior",
+      "description": "BIM coordination and management of digital models for railway and airport projects.",
       "skills": [
-        "Site management",
-        "Low voltage",
-        "Railway",
-        "Airport"
+        "Design & CAD",
+        "Railway & Airport",
+        "Junior"
+      ]
+    },
+    {
+      "jobHeading": "Airport Systems Engineer",
+      "reference": "ISY-110",
+      "jobType": "Permanent contract",
+      "location": "Paris, France",
+      "country": "FR",
+      "categoryId": "engineering",
+      "sectorIds": [
+        "airport"
       ],
-      "missions": [
-        "Technical, administrative and financial monitoring of worksites",
-        "Coordinating a team and the various stakeholders (subcontractors, suppliers)",
-        "Ensuring compliance with deadlines, budgets and quality and safety standards",
-        "Taking part in site meetings and writing the minutes",
-        "Managing the client relationship and communication with stakeholders"
-      ],
-      "profile": [
-        "Higher education (BTS, DUT, professional bachelor's, engineering degree) in civil engineering, electrotechnics or equivalent",
-        "Significant site management experience on transport infrastructure projects, ideally railway or airport",
-        "Use of planning and project management tools",
-        "Knowledge of 2D/3D CAD tools (AutoCAD, Revit, etc.)",
-        "Rigour, autonomy, sense of responsibility and interpersonal skills"
+      "experienceLevelId": "senior",
+      "description": "Design and integration of complex systems for airport infrastructure.",
+      "skills": [
+        "Engineering",
+        "Airport",
+        "Senior"
       ]
     }
   ]
