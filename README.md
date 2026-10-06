@@ -171,7 +171,7 @@ reprises dans `sitemap.xml`. Ajouter une langue implique de compléter ces deux 
 pays. Codes : `fr` France, `gb` Royaume-Uni et Irlande, `pl` Pologne,
 `tr` Turquie, `de` Allemagne, `it` Italie, `es` Espagne, `sa` Arabie saoudite.
 
-Deux usages :
+Usages des images :
 
 - **Carrousels d'en-tête** : `carousel/<page>/<langue>/N.webp` (pages `index`,
   `about`, `expertise`, `recruitment`, `contact` ; langues `fr`, `en`, `pl`,
