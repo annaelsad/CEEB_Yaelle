@@ -164,31 +164,38 @@ function applyTranslations(t, lang) {
 
 /* ============================================================
    IMAGES PAR LANGUE
-   Les carrousels et vignettes utilisent les photos du pays associé
-   à la langue (images/countries/<code>/N.webp). Repli sur le pays
-   de la langue par défaut si une image manque.
+   Carrousels d'en-tête : carousel/<page>/<langue>/N.webp, repli sur
+   le français si une image manque. Vignettes : photos du pays associé
+   à la langue (images/countries/<code>/N.webp), repli sur le pays de
+   la langue par défaut.
    ============================================================ */
 
+const CAROUSEL_LANG_SEGMENT = /((?:^|\/)carousel\/[a-z]+\/)[a-z]{2}\//;
+const CAROUSEL_FALLBACK_LANG = 'fr';
+
+function setLocalizedSrc(img, pathFor, code, fallbackCode) {
+  img.onerror = code === fallbackCode
+    ? null
+    : () => {
+        img.onerror = null;
+        img.src = pathFor(fallbackCode);
+      };
+  img.src = pathFor(code);
+}
+
 function localizeCarouselImages(lang) {
+  document.querySelectorAll('.hero-carousel img').forEach(img => {
+    img.dataset.baseSrc ??= img.getAttribute('src');
+    const pathFor = code => img.dataset.baseSrc.replace(CAROUSEL_LANG_SEGMENT, `$1${code}/`);
+    setLocalizedSrc(img, pathFor, lang, CAROUSEL_FALLBACK_LANG);
+  });
+
   const country = CEEB_CONFIG.languageCountries[lang];
   const fallbackCountry = CEEB_CONFIG.languageCountries[CEEB_CONFIG.fallbackLang];
-
-  document.querySelectorAll('.hero-carousel img, img.expertise-card-img, img.why-card-img').forEach(img => {
-    if (!img.dataset.countrySrc) {
-      img.dataset.countrySrc = img.getAttribute('src');
-    }
-
-    const pathFor = code =>
-      img.dataset.countrySrc.replace(COUNTRY_PATH_SEGMENT, `/countries/${code}/`);
-
-    img.onerror = country === fallbackCountry
-      ? null
-      : () => {
-          img.onerror = null;
-          img.src = pathFor(fallbackCountry);
-        };
-
-    img.src = pathFor(country);
+  document.querySelectorAll('img.expertise-card-img, img.why-card-img').forEach(img => {
+    img.dataset.baseSrc ??= img.getAttribute('src');
+    const pathFor = code => img.dataset.baseSrc.replace(COUNTRY_PATH_SEGMENT, `/countries/${code}/`);
+    setLocalizedSrc(img, pathFor, country, fallbackCountry);
   });
 }
 

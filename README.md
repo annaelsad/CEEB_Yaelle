@@ -173,18 +173,20 @@ pays. Codes : `fr` France, `gb` Royaume-Uni et Irlande, `pl` Pologne,
 
 Deux usages :
 
-- **Carrousels et vignettes** : les pages référencent la version française
-  (`images/countries/fr/N.webp`). `localizeCarouselImages` remplace le code
-  pays selon la langue (`CEEB_CONFIG.languageCountries` : `fr` → `fr`,
-  `en` → `gb`, `pl` → `pl`, `tr` → `tr`), avec repli sur le pays de la langue
-  par défaut si une image manque. Sont concernées les images du carrousel
-  d'en-tête (`.hero-carousel img`) et les vignettes `.expertise-card-img` et
-  `.why-card-img`. Les autres images du site ne changent pas avec la langue.
+- **Carrousels d'en-tête** : `carousel/<page>/<langue>/N.webp` (pages `index`,
+  `about`, `expertise`, `recruitment`, `contact` ; langues `fr`, `en`, `pl`,
+  `tr`). Les pages référencent la version française ; `localizeCarouselImages`
+  remplace le dossier de langue selon la langue du site, avec repli sur `fr`
+  si une image manque. La diapositive N utilise l'image `N.webp`.
+- **Vignettes** `.expertise-card-img` et `.why-card-img` : les pages
+  référencent `images/countries/fr/N.webp` ; le code pays est remplacé selon
+  la langue (`CEEB_CONFIG.languageCountries` : `fr` → `fr`, `en` → `gb`,
+  `pl` → `pl`, `tr` → `tr`), avec repli sur le pays de la langue par défaut.
 - **Section Réseau global** : galerie des 12 photos du pays choisi.
 
 Le carrousel d'en-tête (`initCarousel`) est purement HTML : une `div.carousel-slide`
 par diapositive avec son image et sa légende traduisible, autant de
-`button.carousel-dot` que de diapositives. Les 5 pages en ont 12 (2 sur Contact).
+`button.carousel-dot` que de diapositives. Les 5 pages en ont 12 (8 sur Contact).
 
 ## 6. Page Carrières et offres d'emploi
 
